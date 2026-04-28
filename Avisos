@@ -17,7 +17,7 @@ Então pesquisar as funcionalidades do nosso site ou app:
 -Sistema de mostrar os alertas sobre o golpe
 
 Vamos focar em 1 estilo de golpe (golpe de pix, golpe por e-mail, links falsos, etc...), depois vamos aumentando
-
+------------------------------------------------------------------------------------------------------------------------------------
 FASE 2 — DESIGN E PROTOTIPAÇÃO (Figma)
 
 Faça o Design e o protótipo juntos no figma pra ganharmos tempo.
@@ -25,28 +25,56 @@ Tem que ser feito com um design leve e de facil compreendimento para os mais ido
 
 -----------------ESSE ABAIXO É UM EXEMPLO DAS PAGINAS.
 
-1. 🏠 Tela Inicial (Home)
+1.  Tela Inicial (Home)
    - Logo do projeto
    - Botão "Analisar Mensagem"
    - Botão "Aprender sobre Golpes"
    - Botão "Quiz"
    - Botão "Modo Acessível"
 
-2. 🔍 Tela do Detector
+2.  Tela do Detector
    - Caixa de texto para colar mensagem
    - Botão "Analisar"
    - Área de resultado (SUSPEITO / SEGURO)
 
-3. 📚 Tela Educativa
+3.  Tela Educativa
    - Cards com tipos de golpes
    - Exemplo real + como se proteger
 
-4. 👴 Modo Acessível
+4.  Modo Acessível
    - Fonte grande
    - Botões grandes
    - Linguagem simples
-
+--------------------------------------------------------------------------------------------------------------------------
 FASE 3 ---- Codigo do Sistema
 
 ai o bicho pega. 
 cada pagina tem q ser feita em conjunto ao protótipo.
+
+Temos que fazer:
+Banco de dados pra guardar todas as informações
+Criar as pastas organizadas com cada arquivo, cada arquivo vai servir pra uma parte no nosso projeto ;
+         A PASTA:
+src/
+├── components/         ← Componentes reutilizáveis
+│   ├── Header.jsx
+│   ├── Footer.jsx
+│   ├── AlertBox.jsx
+│   └── QuizCard.jsx
+│
+├── pages/              ← Páginas da aplicação
+│   ├── Home.jsx
+│   ├── Detector.jsx
+│   ├── Educativo.jsx
+│   ├── Quiz.jsx
+│   └── ModoAcessivel.jsx
+│
+├── data/               ← Dados estáticos
+│   ├── golpes.js       ← Lista de golpes cadastrados
+│   ├── palavrasChave.js ← Palavras suspeitas
+│   └── quizPerguntas.js ← Perguntas do quiz
+│
+├── styles/             ← Estilos CSS
+├── App.jsx             ← Rotas principais
+└── index.js
+-----------------------------------------------------------------------------------------------------------------------------
